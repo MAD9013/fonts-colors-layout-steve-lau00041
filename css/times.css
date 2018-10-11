@@ -1,41 +1,59 @@
 *,
 *::after,
 *::before{
-    padding: 0;
-    margin: 0;
+    padding: 2px;
+    margin: 0px;
     box-sizing: border-box;
 }
 html{
     font-size: 16px;
     line-height: 1.6;
     /*font-family: font stack required for body text */
+    font-family: sans-serif;
 }
 h1, h2, h3, h4{
     /*font-family: font stack required for headings */
+    font-family: serif;
 }
 p{
     
 }
 .container{
-    
+    max-width: 1500px;
 }
 .subnav{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
     
+    background-color: hsl(0, 2%, 22%);
 }
 .subnav a{
-    
+    color: hsl(0, 0%, 100%);
 }
 .mainnav{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    
+    background-color: hsl(0, 2%, 22%);
     
 }
 .mainnav a{
-    
+    color: hsl(0, 0%, 100%);
+}
+.mainnav a:hover{
+    background-color: hsl(0, 3%, 50%);
 }
 .masthead{
-    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
 }
 .times-logo{
-    
+    max-width: 100vw;
+    height: auto;
 }
 .masthead h1{
     
@@ -48,13 +66,21 @@ p{
 }
 .story.lead-story{
     
+    border: 5px solid hsl(217, 75%, 55%);
+    overflow: auto;
+}
+.story.lead-story::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 h1.story-title{
     
 }
 .story img{
-    
+    float: right;
 }
+
 .story p{
     
 }
