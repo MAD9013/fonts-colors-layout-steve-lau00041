@@ -1,22 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Mali');
+
 *,
 *::after,
 *::before{
     padding: 2px;
     margin: 0px;
     box-sizing: border-box;
+    background-color: hsl(250, 20%, 20%);
 }
 html{
     font-size: 16px;
     line-height: 1.6;
     /*font-family: font stack required for body text */
-    font-family: sans-serif;
+    font-family: Mali, Georgia, sans-serif;
 }
 h1, h2, h3, h4{
     /*font-family: font stack required for headings */
-    font-family: serif;
+    font-family: Tangerine, Times, serif;
+    font-size: 48px;
+    color: hsl(100, 70%, 70%);
 }
 p{
-    
+    color: hsl(50, 50%, 70%);
 }
 .container{
     max-width: 1500px;
@@ -30,6 +36,7 @@ p{
 }
 .subnav a{
     color: hsl(0, 0%, 100%);
+    background-color: inherit;
 }
 .mainnav{
     display: flex;
@@ -41,6 +48,7 @@ p{
 }
 .mainnav a{
     color: hsl(0, 0%, 100%);
+    background-color: inherit;
 }
 .mainnav a:hover{
     background-color: hsl(0, 3%, 50%);
@@ -56,16 +64,15 @@ p{
     height: auto;
 }
 .masthead h1{
-    
+    color: hsl(0, 0%, 100%);
 }
 .content{
     
 }
 .content .story{
-    
+    margin-top: 100px;
 }
 .story.lead-story{
-    
     border: 5px solid hsl(217, 75%, 55%);
     overflow: auto;
 }
@@ -85,6 +92,9 @@ h1.story-title{
     
 }
 .story blockquote{
+    color: hsl(200, 50%, 70%);
+    font-style: italic;
+    font-size: 14px;
     quotes: "\201E" "\201D";
 }
 .story blockquote::before{
@@ -94,17 +104,21 @@ h1.story-title{
     content: close-quote;
 }
 .story p.byline{
-    
+    margin-top: 50px;
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+    margin-bottom: 20px;
 }
 p.byline span.author{
-    
+    font-weight: 600;
+    color: hsl(50, 70%, 60%);
 }
 p.byline span.pub{
-    
+    font-weight: 600;
+    color: hsl(50, 70%, 60%);
 }
 .foot{
-    
+    margin-top: 200px;
 }
 .foot p{
-    
+    border-top: 2px solid hsl(0, 10%, 0%);
 }
